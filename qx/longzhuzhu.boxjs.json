@@ -1,0 +1,59 @@
+{
+  "id": "longzhuzhu.app.sub",
+  "name": "龙猪猪 应用订阅",
+  "author": "@longzhuzhu",
+  "icon": "https://avatars.githubusercontent.com/u/5230432?s=400&u=b9f8f4631312cb0b2321564a2baf3df37436935f&v=4",
+  "repo": "https://github.com/longzhuzhu/nianyu",
+  "apps": [
+    {
+      "id": "jdLiveRain",
+      "name": "京豆雨",
+      "keys": [
+        "RAIN_NOTIFY_CONTROL",
+        "SUPER_RAIN_RRA",
+        "HALF_RAIN_RRA"
+      ],
+      "settings": [
+        {
+          "id": "RAIN_NOTIFY_CONTROL",
+          "name": "京豆雨通知",
+          "val": "true",
+          "type": "radios",
+          "desc": "默认发送通知",
+          "items": [{
+            "key": "true",
+            "label": "通知"
+          }, {
+            "key": "false",
+            "label": "不通知"
+          }]
+        },
+        {
+          "id": "SUPER_RAIN_RRA",
+          "name": "整点京豆雨RRA",
+          "val": "",
+          "type": "text",
+          "desc": "整点京豆雨RRA, 默认无需填写, 脚本从远程配置获取。多个ID英文分号间隔;"
+        },
+        {
+          "id": "HALF_RAIN_RRA",
+          "name": "半点京豆雨RRA",
+          "val": "",
+          "type": "text",
+          "desc": "半点京豆雨RRA, 默认无需填写, 脚本从远程配置获取。多个ID英文分号间隔;"
+        }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/58xinian/icon/master/jd_bean_home.png",
+        "https://raw.githubusercontent.com/58xinian/icon/master/jd_bean_home.png"
+      ],
+      "author": "@longzhuzhu",
+      "repo": "https://github.com/longzhuzhu/nianyu",
+      "script": "https://github.com/longzhuzhu/nianyu/main/qx/jd_super_redrain.js",
+      "descs_html": [
+        "龙猪猪 作者仓库：【<a href=\"https://github.com/longzhuzhu/nianyu\">https://github.com/longzhuzhu/nianyu</a>】",
+        "龙猪猪 电报频道：【<a href=\"https://t.me/longzhuzhu\">https://t.me/longzhuzhu</a>】"
+      ]
+    }
+  ]
+}
