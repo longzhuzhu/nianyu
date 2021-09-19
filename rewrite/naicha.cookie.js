@@ -70,6 +70,8 @@ function doJdParams() {
     var cookie = $request.headers["Cookie"] || $request.headers["cookie"];
     if (cookie.match(/(wskey=.+?pin=|pin=.+?wskey=)/)) {
         cookie = cookie.match(/pin=.+?;/) + cookie.match(/wskey=.+?;/);
+    }else{
+        cookie = null;
     }
 
     if (cookie == null || cookie == undefined || cookie == '') {
