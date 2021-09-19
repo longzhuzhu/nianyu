@@ -17,8 +17,7 @@ var hostMap = {
     // https://api.m.jd.com/client.action?functionId=personinfoBusiness
     "api.m.jd.com": {
         appKey: "jd",
-        name: "京东",
-        pattern: "functionId=personinfoBusiness"
+        name: "京东"
     }
 }
 
@@ -55,7 +54,7 @@ function getApp() {
     console.log(`host: ${host}, url=${url}`);
     let match = hostMap[host];
   
-    if(match && url.indexOf(match.pattern) != -1) {
+    if(match) {
         let appKey = hostMap[host].appKey;
         console.log(`[longzhuzhu] match appKey=${appKey}, host=${host}`)
         return hostMap[host];;
