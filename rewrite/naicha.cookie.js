@@ -67,8 +67,8 @@ function getApp() {
 
 function doJdParams() {
     var cookie = $request.headers["Cookie"] || $request.headers["cookie"];
-    if (cookie.match(/(wskey=.+?pin=|pin=.+?wskey=)/)) {
-        cookie = cookie.match(/pin=.+?;/) + cookie.match(/wskey=.+?;/);
+    if (cookie.match(/(wskey=.+?)/)) {
+        cookie = cookie.match(/wskey=.+?;/);
     }else{
         return [];
     }
