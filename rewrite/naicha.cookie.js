@@ -70,7 +70,7 @@ function doJdParams() {
     if (cookie.match(/(wskey=.+?pin=|pin=.+?wskey=)/)) {
         cookie = cookie.match(/pin=.+?;/) + cookie.match(/wskey=.+?;/);
     }else{
-        cookie = null;
+        return [];
     }
 
     if (cookie == null || cookie == undefined || cookie == '') {
