@@ -4,7 +4,7 @@
  *
  * 添加重写
  *
- * ^https:\/\/api\.m\.jd\.com\/client\.action url script-request-body https://raw.githubusercontent.com/longzhuzhu/nianyu/main/rewrite/naicha-cookie.js
+ * ^https:\/\/api\.m\.jd\.com\/client\.action url script-request-body https://raw.githubusercontent.com/longzhuzhu/nianyu/main/rewrite/naicha.cookie.js
  *
  * api.m.jd.com
  * @type {string}
