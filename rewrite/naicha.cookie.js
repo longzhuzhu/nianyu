@@ -14,11 +14,10 @@ var TITLE = "龙龙CK"
 $ = new Env(TITLE);
 
 var hostMap = {
-    // https://api.m.jd.com/client.action?functionId=personinfoBusiness
+    // https://api.m.jd.com/client.action?functionId=getSecondWalletInfo
     "api.m.jd.com": {
         appKey: "jd",
-        name: "京东",
-        pattern: "functionId=personinfoBusiness"
+        name: "京东"
     }
 }
 
@@ -55,10 +54,10 @@ function getApp() {
     console.log(`host: ${host}, url=${url}`);
     let match = hostMap[host];
   
-    if(match && url.indexOf(match.pattern) != -1) {
+    if(match) {
         let appKey = hostMap[host].appKey;
-        console.log(`[longzhuzhu] match appKey=${appKey}, host=${host}`)
-        return hostMap[host];;
+        console.log(`[longzhuzhu] match appKey=${appKey}, host=${host}`)；
+        return hostMap[host];
     }else {
         console.log(`[longzhuzhu] no match appKey~`)
         return null;
