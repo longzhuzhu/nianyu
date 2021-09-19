@@ -56,10 +56,10 @@ function getApp() {
   
     if(match) {
         let appKey = hostMap[host].appKey;
-        console.log(`[longzhuzhu] match appKey=${appKey}, host=${host}`)；
+        console.log(`[naicha] match appKey=${appKey}, host=${host}`);
         return hostMap[host];
     }else {
-        console.log(`[longzhuzhu] no match appKey~`)
+        console.log(`[naicha] no match appKey~`);
         return null;
     }
 
