@@ -52,7 +52,10 @@ function getApp() {
     let headers = $request.headers
     let url = $request.url
     let host = headers["Host"] || headers["host"]
-    if(hostMap[host] && url.indexOf(hostMap[host].pattern) != -1) {
+    console.log(`host: ${host}, url=${url}`);
+    let match = hostMap[host];
+    console.log(`match:${match}`)
+    if(match && url.indexOf(match.pattern) != -1) {
         let appKey = hostMap[host].appKey;
         console.log(`[longzhuzhu] match appKey=${appKey}, host=${host}`)
         return appKey;
